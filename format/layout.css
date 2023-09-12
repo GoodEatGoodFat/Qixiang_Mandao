@@ -306,7 +306,7 @@ ul {
 }
 
 .main-picture {
-  background-image: url(https://github.com/GoodEatGoodFat/Fullstack-practice/blob/heng-structure/assignment1/imgs/1_resized.png?raw=true);
+  background-image: url(https://goodeatgoodfat.github.io/Qixiang_Mandao/imgs/1_resized.png);
   background-size: cover;
   background-position: right center;
   height: 540px;
@@ -378,7 +378,7 @@ ul {
 }
 
 .divider__wrapper {
-  background-image: url(https://github.com/GoodEatGoodFat/Fullstack-practice/blob/heng-structure/assignment1/imgs/bar.png?raw=true);
+  background-image: url(https://goodeatgoodfat.github.io/Qixiang_Mandao/imgs/bar.png);
   background-position: center;
   background-size: cover;
   padding-top: 5rem;
@@ -405,7 +405,7 @@ ul {
 }
 
 hr.thin-bar {
-  background-image: url(https://github.com/GoodEatGoodFat/Fullstack-practice/blob/heng-structure/assignment1/imgs/hr.png?raw=true);
+  background-image: url(https://goodeatgoodfat.github.io/Qixiang_Mandao/imgs/hr.png);
   padding-bottom: 4.76%;
   background-color: red;
   margin-top: 1.5rem;
