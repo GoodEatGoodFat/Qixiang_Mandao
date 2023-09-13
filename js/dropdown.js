@@ -5,8 +5,10 @@ const symPlus = document.getElementById("symPlus")
 const symMinus = document.getElementById("symMinus")
 
 let isOpen = true;
-let totalheight = contentInner.offsetHeight + 20;
+// let totalheight = contentInner.offsetHeight + 20;
 dropDownBtn.addEventListener("click", (event) => {
+  
+let totalheight = contentInner.offsetHeight + 20;
   event.preventDefault();
   isOpen = !isOpen;
   if (isOpen) {
