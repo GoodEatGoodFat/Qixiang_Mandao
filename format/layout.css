@@ -89,6 +89,10 @@ h3 {
   padding-top: 1rem;
 }
 
+.ma {
+  margin: 0 auto;
+}
+
 .-mt-4 {
   margin-top: -1rem;
 }
@@ -253,13 +257,9 @@ ul {
 .header-wrapper .header {
   padding: 0 2rem;
   margin: 0 auto;
-  display: flex;
   max-width: 1280px;
   justify-content: space-between;
-}
-.header-wrapper .header .logo {
-  width: 300px;
-  height: 144px;
+  display: flex;
 }
 .header-wrapper .header .navigation-holder {
   display: flex;
@@ -283,6 +283,14 @@ ul {
 }
 .header-wrapper .header .navi-top a:hover {
   background-color: var(--grey);
+}
+.header-wrapper .social-media {
+  display: none;
+}
+
+.logo {
+  max-width: 80px;
+  height: auto;
 }
 
 .social-media {
@@ -385,7 +393,7 @@ ul {
   margin-bottom: 4rem;
 }
 .divider__wrapper .divider__content {
-  width: 56rem;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 15px;
   text-align: center;
@@ -440,6 +448,28 @@ hr.thin-bar {
 }
 .footer .terms li {
   margin-right: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+}
+.footer .footer__navi {
+  flex-direction: column;
+  align-items: center;
+}
+.footer .logo {
+  display: inline;
+}
+.footer .pr-8 {
+  padding-right: 0;
+}
+.footer .social-media {
+  justify-content: center;
+  padding-right: 0;
+}
+.footer .social-media li {
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 @media (min-width: 640px) {
@@ -509,6 +539,49 @@ hr.thin-bar {
   }
   .container {
     max-width: 1024px;
+  }
+  .header {
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 1280px;
+    justify-content: space-between;
+  }
+  .header .navigation-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+  }
+  .header .navi-top {
+    display: flex;
+    height: 60px;
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+  }
+  .header .navi-top a {
+    height: 100%;
+    line-height: 60px;
+    padding: 22px;
+    transition: 0.2s;
+    font-weight: 700;
+  }
+  .header .navi-top a:hover {
+    background-color: var(--grey);
+  }
+  .header .social-media {
+    display: flex;
+  }
+  .footer {
+    text-align: start;
+  }
+  .footer .footer__navi {
+    flex-direction: row;
+    align-items: start;
+  }
+  .logo {
+    max-width: 160px;
+    height: auto;
   }
 }
 @media (min-width: 1280px) {
