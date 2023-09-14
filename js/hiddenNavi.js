@@ -7,7 +7,11 @@ let open = false;
 openMenu.addEventListener("click", (event) => {
   event.preventDefault();
   if (!open) {
+    menu.classList.add("transform-transition");
     menu.classList.add("transformHiddenNavi");
+    setTimeout(() => {
+      menu.classList.remove("transform-transition");
+    }, 200);
   }
   open = !open;
 });
@@ -15,7 +19,12 @@ openMenu.addEventListener("click", (event) => {
 closeMenu.addEventListener("click", (event) => {
   event.preventDefault();
   if (open) {
+    menu.classList.add("transform-transition");
     menu.classList.remove("transformHiddenNavi");
+
+    setTimeout(() => {
+      menu.classList.remove("transform-transition");
+    }, 200);
   }
   open = !open;
 });

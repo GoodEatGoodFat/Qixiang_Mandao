@@ -10,7 +10,6 @@
 .fuqing .container {
   padding-top: 8.5rem;
   padding-bottom: 11rem;
-  padding-right: 35%;
 }
 .fuqing .fuqing__content {
   padding: 20px;
@@ -73,4 +72,15 @@
   margin: auto;
   transition: 1s ease;
   width: 50%;
+}
+
+@media (min-width: 1024px) {
+  .fuqing .container {
+    padding-right: 35%;
+  }
+}
+@media (min-width: 1280px) {
+  .fuqing .container {
+    padding-right: 35%;
+  }
 }

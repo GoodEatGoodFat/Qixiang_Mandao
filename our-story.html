@@ -29,35 +29,57 @@
         <div class="border-box"></div>
         <div class="header">
           <a href="./index.html">
-            <img src="./imgs/logo_c.png" alt="" class="logo" />
+            <img
+              src="./imgs/logo_c.png"
+              alt="QiXiang brand logo"
+              class="logo"
+            />
           </a>
+          <!--//////////////////////////////////////////////////////-->
+          <div class="navi-top__wrap">
+            <div class="navi-top__btn">
+              <a href="" class="navi-top__obtn"
+                ><i class="fa-solid fa-bars" style="color: #ffffff"></i
+              ></a>
+            </div>
 
-          <div class="navigation-holder">
-            <ul class="social-media flex flex-row pt-4">
-              <!-- social media -->
-              <li><a href="" class="fab fa-facebook small-logo"></a></li>
-              <li><a href="" class="fab fa-twitter small-logo"></a></li>
-              <li><a href="" class="fab fa-instagram small-logo"></a></li>
-            </ul>
-            <ul class="navi-top font-title">
-              <!-- navi -->
-              <li>
-                <a href="./index.html" class="">Homepage</a>
-              </li>
-              <li>
-                <a href="./products/product-range.html" class="">Products</a>
-              </li>
-              <li>
-                <a href="./recipes/recipes.html" class="">Recipes</a>
-              </li>
-              <li>
-                <a href="./our-story.html" class="">Our Story</a>
-              </li>
-              <li>
-                <a href="./contact-us.html" class="">Contact Us</a>
-              </li>
-            </ul>
+            <div class="navigation-holder">
+              <div class="flex flex-row flex-between align-bottom">
+                <ul class="social-media flex flex-row pt-4">
+                  <!-- social media -->
+                  <li><a href="" class="fab fa-facebook small-logo"></a></li>
+                  <li><a href="" class="fab fa-twitter small-logo"></a></li>
+                  <li><a href="" class="fab fa-instagram small-logo"></a></li>
+                </ul>
+                <div class="navi-top__cls">
+                  <a href="" class="navi-top__cbtn"
+                    ><i class="fa-solid fa-xmark" style="color: #ffffff"></i
+                  ></a>
+                </div>
+              </div>
+
+              <ul class="navi-top font-title">
+                <!-- navi -->
+                <li>
+                  <a href="./index.html" class="">Homepage</a>
+                </li>
+                <li>
+                  <a href="./products/product-range.html" class="">Products</a>
+                </li>
+                <li>
+                  <a href="./recipes/recipes.html" class="">Recipes</a>
+                </li>
+                <li>
+                  <a href="./our-story.html" class="">Our Story</a>
+                </li>
+                <li>
+                  <a href="./contact-us.html" class="">Contact Us</a>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <!--//////////////////////////////////////////////////////-->
         </div>
       </header>
 
@@ -183,15 +205,21 @@
       <div class="footer__content">
         <div class="">
           <div class="container pb-10 footer__container">
-            <div class="flex flex-row flex-between pb-8">
-              <div class="w-1/5">
+            <div class="flex flex-row flex-between pb-8 footer__navi">
+              <div class="w-1/5 mb-4">
                 <div class="-mt-4 pr-8">
-                  <a href="./index.html">
-                    <img src="./imgs/logo_c.png" alt="logo" />
-                  </a>
+                  <div class="">
+                    <a href="./index.html">
+                      <img
+                        src="./imgs/logo_c.png"
+                        class="logo"
+                        alt="QiXiang brand logo"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="w-1/5">
+              <div class="w-1/5 mb-4">
                 <h3>Products</h3>
                 <ul class="flex flex-col">
                   <li>
@@ -211,7 +239,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-1/5">
+              <div class="w-1/5 mb-4">
                 <h3>recipes</h3>
                 <ul class="flex flex-col">
                   <li>
@@ -230,7 +258,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-1/5">
+              <div class="w-1/5 mb-4">
                 <h3>About Us</h3>
                 <ul class="flex flex-col">
                   <li>
@@ -241,7 +269,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-1/5">
+              <div class="w-1/5 mb-4">
                 <ul class="social-media flex flex-row">
                   <!-- social media -->
                   <li><a href="" class="fab fa-facebook small-logo"></a></li>
@@ -261,6 +289,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/hiddenNavi.js"></script>
     <script src="./js/scrollDown.js"></script>
   </body>
 </html>
