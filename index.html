@@ -27,7 +27,7 @@
     <div class="page-container">
       <header class="header-wrapper">
         <div class="border-box"></div>
-        <div class="header hide">
+        <div class="header">
           <a href="./index.html">
             <img
               src="./imgs/logo_c.png"
@@ -35,38 +35,57 @@
               class="logo"
             />
           </a>
-          <div class="navigation-holder">
-            <ul class="social-media flex flex-row pt-4">
-              <!-- social media -->
-              <li><a href="" class="fab fa-facebook small-logo"></a></li>
-              <li><a href="" class="fab fa-twitter small-logo"></a></li>
-              <li><a href="" class="fab fa-instagram small-logo"></a></li>
-            </ul>
-            <ul class="navi-top font-title">
-              <!-- navi -->
-              <li>
-                <a href="./index.html" class="">Homepage</a>
-              </li>
-              <li>
-                <a href="./products/product-range.html" class="">Products</a>
-              </li>
-              <li>
-                <a href="./recipes/recipes.html" class="">Recipes</a>
-              </li>
-              <li>
-                <a href="./our-story.html" class="">Our Story</a>
-              </li>
-              <li>
-                <a href="./contact-us.html" class="">Contact Us</a>
-              </li>
-            </ul>
+          <!--//////////////////////////////////////////////////////-->
+          <div class="navi-top__wrap">
+            <div class="navi-top__btn">
+              <a href="" class="navi-top__obtn"
+                ><i class="fa-solid fa-bars" style="color: #ffffff"></i
+              ></a>
+            </div>
+
+            <div class="navigation-holder">
+              <div class="flex flex-row flex-between align-bottom">
+                <ul class="social-media flex flex-row pt-4">
+                  <!-- social media -->
+                  <li><a href="" class="fab fa-facebook small-logo"></a></li>
+                  <li><a href="" class="fab fa-twitter small-logo"></a></li>
+                  <li><a href="" class="fab fa-instagram small-logo"></a></li>
+                </ul>
+                <div class="navi-top__cls">
+                  <a href="" class="navi-top__cbtn"
+                    ><i class="fa-solid fa-xmark" style="color: #ffffff"></i
+                  ></a>
+                </div>
+              </div>
+
+              <ul class="navi-top font-title">
+                <!-- navi -->
+                <li>
+                  <a href="./index.html" class="">Homepage</a>
+                </li>
+                <li>
+                  <a href="./products/product-range.html" class="">Products</a>
+                </li>
+                <li>
+                  <a href="./recipes/recipes.html" class="">Recipes</a>
+                </li>
+                <li>
+                  <a href="./our-story.html" class="">Our Story</a>
+                </li>
+                <li>
+                  <a href="./contact-us.html" class="">Contact Us</a>
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <!--//////////////////////////////////////////////////////-->
         </div>
       </header>
       <!-- ref: https://www.bulla.com.au/ main picture -->
       <div class="body-main">
         <div class="individual">
-          <div class="container pb-16">
+          <div class=" pb-16">
             <div class="main-picture">
               <div class="content">
                 <div class="logan font2">health life<br />With grilled eel</div>
@@ -323,12 +342,12 @@
                 </ul>
               </div>
               <div class="w-1/5 mb-4">
-                  <ul class="social-media flex flex-row">
-                    <!-- social media -->
-                    <li><a href="" class="fab fa-facebook small-logo"></a></li>
-                    <li><a href="" class="fab fa-twitter small-logo"></a></li>
-                    <li><a href="" class="fab fa-instagram small-logo"></a></li>
-                  </ul>
+                <ul class="social-media flex flex-row">
+                  <!-- social media -->
+                  <li><a href="" class="fab fa-facebook small-logo"></a></li>
+                  <li><a href="" class="fab fa-twitter small-logo"></a></li>
+                  <li><a href="" class="fab fa-instagram small-logo"></a></li>
+                </ul>
               </div>
             </div>
             <div class="terms flex flex-row flex-between">
@@ -342,6 +361,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/hiddenNavi.js"></script>
   </body>
 </html>
 

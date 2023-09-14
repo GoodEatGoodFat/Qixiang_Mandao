@@ -1,14 +1,13 @@
 const dropDownBtn = document.getElementById("dropDownBtn");
 const dropDownContent = document.getElementById("dropDownBtn__content");
 const contentInner = document.getElementById("content_inner");
-const symPlus = document.getElementById("symPlus")
-const symMinus = document.getElementById("symMinus")
+const symPlus = document.getElementById("symPlus");
+const symMinus = document.getElementById("symMinus");
 
 let isOpen = true;
 // let totalheight = contentInner.offsetHeight + 20;
 dropDownBtn.addEventListener("click", (event) => {
-  
-let totalheight = contentInner.offsetHeight + 20;
+  let totalheight = contentInner.offsetHeight + 20;
   event.preventDefault();
   isOpen = !isOpen;
   if (isOpen) {
@@ -18,14 +17,14 @@ let totalheight = contentInner.offsetHeight + 20;
     dropDownContent.style.paddingBottom = "0px";
     //'-' -> '+'
     symPlus.style.removeProperty("display");
-    symMinus.style.display = 'none';
+    symMinus.style.display = "none";
   } else {
     //to open
     dropDownContent.style.height = totalheight + "px";
     dropDownContent.style.removeProperty("padding-top");
     dropDownContent.style.removeProperty("padding-bottom");
     //'-' <- '+'
-    symMinus.style.display = 'inline-block';
-    symPlus.style.display = 'none';
+    symMinus.style.display = "inline-block";
+    symPlus.style.display = "none";
   }
 });

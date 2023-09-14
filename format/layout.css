@@ -9,6 +9,7 @@
   --bgk: #f4cc9c;
   --grey: #929798;
   --darkBlue: #191475;
+  --social-size: 1.675rem;
 }
 
 a {
@@ -209,6 +210,14 @@ h3 {
   align-items: center;
 }
 
+.align-bottom {
+  align-items: end;
+}
+
+.transformHiddenNavi {
+  transform: translate3d(-100vw, 0, 0);
+}
+
 .btn {
   font-weight: 700;
   color: white;
@@ -246,6 +255,25 @@ ul {
   list-style: none;
 }
 
+.social-media {
+  width: auto;
+  justify-content: end;
+  padding-right: 20px;
+}
+.social-media .small-logo {
+  background-color: var(--red);
+  color: white;
+  border-radius: 50%;
+  width: var(--social-size);
+  height: var(--social-size);
+  line-height: var(--social-size);
+  font-size: var(--social-size);
+  text-align: center;
+}
+.social-media li {
+  margin-right: calc(var(--social-size) / 2);
+}
+
 .header-wrapper {
   background: var(--red);
 }
@@ -259,58 +287,55 @@ ul {
   margin: 0 auto;
   max-width: 1280px;
   justify-content: space-between;
+  align-items: center;
   display: flex;
+}
+.header-wrapper .header .navi-top__btn,
+.header-wrapper .header .navi-top__cls {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.header-wrapper .header .navi-top__btn a i,
+.header-wrapper .header .navi-top__cls a i {
+  font-size: 2.75rem;
+}
+.header-wrapper .header .navi-top__wrap {
+  position: relative;
 }
 .header-wrapper .header .navigation-holder {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: flex-end;
+  transition: 0.2s ease;
+  position: fixed;
+  right: -100vw;
+  top: 0;
+  z-index: 9;
+  padding: 4rem;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--red);
+}
+.header-wrapper .header .navigation-holder .small-logo {
+  --social-size: 2.75rem;
 }
 .header-wrapper .header .navi-top {
-  display: flex;
   height: 60px;
   margin-top: 10px;
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
+}
+.header-wrapper .header .navi-top ul li {
+  margin-bottom: 0.75rem;
 }
 .header-wrapper .header .navi-top a {
-  height: 100%;
-  line-height: 60px;
+  display: block;
+  width: 100%;
   padding: 22px;
   transition: 0.2s;
   font-weight: 700;
-}
-.header-wrapper .header .navi-top a:hover {
-  background-color: var(--grey);
-}
-.header-wrapper .social-media {
-  display: none;
 }
 
 .logo {
   max-width: 80px;
   height: auto;
-}
-
-.social-media {
-  width: auto;
-  justify-content: end;
-  padding-right: 20px;
-}
-.social-media li {
-  margin-right: 12px;
-}
-.social-media .small-logo {
-  --social-size: 25px;
-  background-color: var(--red);
-  color: white;
-  border-radius: 50%;
-  width: var(--social-size);
-  height: var(--social-size);
-  line-height: var(--social-size);
-  font-size: 22px;
-  text-align: center;
 }
 
 .main-picture {
@@ -323,7 +348,7 @@ ul {
   justify-content: center;
 }
 .main-picture .content {
-  margin: 0 50px;
+  margin: 0 4rem;
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(5px);
@@ -540,37 +565,41 @@ hr.thin-bar {
   .container {
     max-width: 1024px;
   }
-  .header {
-    padding: 0 2rem;
-    margin: 0 auto;
-    max-width: 1280px;
-    justify-content: space-between;
+  .header-wrapper .header {
+    align-items: end;
   }
-  .header .navigation-holder {
+  .header-wrapper .header .navi-top__btn,
+.header-wrapper .header .navi-top__cls {
+    display: none;
+  }
+  .header-wrapper .header .logo {
+    width: 300px;
+    height: 144px;
+  }
+  .header-wrapper .header .small-logo {
+    font-size: 1.675rem;
+  }
+  .header-wrapper .header .navigation-holder {
+    transform: none;
+    padding: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: flex-end;
+    right: auto;
+    width: auto;
+    height: auto;
   }
-  .header .navi-top {
+  .header-wrapper .header .navi-top {
     display: flex;
-    height: 60px;
-    margin-top: 10px;
-    color: white;
     font-size: 1rem;
   }
-  .header .navi-top a {
-    height: 100%;
-    line-height: 60px;
-    padding: 22px;
-    transition: 0.2s;
-    font-weight: 700;
+  .header-wrapper .header .navi-top a {
+    display: list-item;
   }
-  .header .navi-top a:hover {
+  .header-wrapper .header .navi-top a:hover {
     background-color: var(--grey);
-  }
-  .header .social-media {
-    display: flex;
   }
   .footer {
     text-align: start;
